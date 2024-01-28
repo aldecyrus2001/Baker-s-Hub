@@ -1,0 +1,174 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.side-nav {
+    margin-top: 50px;
+    margin-left: 5px;
+    width: 80px;
+    height: 80%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: #9ec8b982;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.side-nav li {
+    margin-top: 20px;
+
+    list-style: none;
+}
+
+.user div {
+    display: none;
+}
+
+.user h2 {
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-top: 15px;
+}
+
+.user p {
+    font-size: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: whitesmoke;
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+.first-ul {
+    flex-grow: 1;
+    margin-bottom: auto;
+}
+
+.first-ul a {
+    text-decoration: none;
+}
+
+.second-ul {
+    margin-top: auto;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.second-ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-top: 0px;
+    list-style: none;
+    padding: 0px;
+}
+
+hr {
+    margin: 0px;
+}
+
+ul li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #011368;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+ul li i {
+    margin-right: 0px;
+}
+
+ul li h2 {
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    display: none;
+}
+
+.side-nav:hover {
+    width: 250px;
+    height: 100%;
+    margin: 0px;
+    border-radius: 0 10px 10px 0;
+}
+
+.side-nav:hover .user div {
+    display: block;
+    margin-left: 10px;
+}
+
+div h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.side-nav:hover .user {
+    width: 100%;
+    background: #5c83746a;
+    backdrop-filter: blur(5px);
+}
+
+.side-nav:hover .user-img {
+    margin: 0;
+}
+
+.side-nav:hover ul li h2 {
+    margin-left: 10px;
+    display: block;
+}
+
+.side-nav:hover ul li img {
+    margin-right: 10px;
+}
+
+.side-nav:hover ul li {
+    justify-content: flex-start;
+}
+
+.side-nav ul li:hover {
+    color: #14173a;
+    /* Change text color on hover */
+}
+
+.side-nav ul li:hover {
+    background: #C5FFF8;
+}
